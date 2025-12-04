@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
 
 export default function TraerDatos() {
 
@@ -25,7 +26,6 @@ export default function TraerDatos() {
             consumir_api()
         })
     }
-
 
     return (
         <div className="container mt-5">
@@ -83,6 +83,10 @@ export default function TraerDatos() {
                                                 >
                                                     Eliminar
                                                 </button>
+
+                                                <Link to = {"/editar/"+item.id}>
+                                                    <button>Editar</button>
+                                                </Link>
                                             </td>
                                         </tr>
                                     ))}
