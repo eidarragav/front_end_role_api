@@ -45,18 +45,16 @@ const {id} = useParams()
             <div className="row justify-content-center">
                 <div className="col-md-6">
 
-                    {/* CARD MARRÓN */}
                     <div 
                         className="card shadow"
                         style={{
-                            backgroundColor: "#f6eee3",   // beige cálido
-                            border: "1px solid #c7a27b",   // marrón claro
+                            backgroundColor: "#f6eee3",   
+                            border: "1px solid #c7a27b",   
                             borderRadius: "12px"
                         }}
                     >
                         <div className="card-body">
 
-                            {/* TÍTULO */}
                             <h3 
                                 className="text-center mb-4"
                                 style={{ color: "#6d4c3d", fontWeight: "bold" }}
@@ -64,7 +62,6 @@ const {id} = useParams()
                                 Crear Rol
                             </h3>
 
-                            {/* INPUT */}
                             <div className="mb-3">
                                 <label 
                                     className="form-label"
@@ -85,7 +82,6 @@ const {id} = useParams()
                                 />
                             </div>
 
-                            {/* BOTÓN MARRÓN */}
                             <div className="d-grid">
                                 <button 
                                     type="button"

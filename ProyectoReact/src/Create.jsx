@@ -22,7 +22,10 @@ export default function Create() {
         })
 
         .then(function (data){
+            document.getElementById("role_name").value = "";
+            location.reload();
             return console.log(data)
+            
         })
     }
 
@@ -31,18 +34,16 @@ export default function Create() {
             <div className="row justify-content-center">
                 <div className="col-md-6">
 
-                    {/* CARD MARRÓN */}
                     <div 
                         className="card shadow"
                         style={{
-                            backgroundColor: "#f6eee3",   // beige cálido
-                            border: "1px solid #c7a27b",   // marrón claro
+                            backgroundColor: "#f6eee3",   
+                            border: "1px solid #c7a27b",   
                             borderRadius: "12px"
                         }}
                     >
                         <div className="card-body">
 
-                            {/* TÍTULO */}
                             <h3 
                                 className="text-center mb-4"
                                 style={{ color: "#6d4c3d", fontWeight: "bold" }}
@@ -50,7 +51,6 @@ export default function Create() {
                                 Crear Rol
                             </h3>
 
-                            {/* INPUT */}
                             <div className="mb-3">
                                 <label 
                                     className="form-label"
@@ -64,15 +64,15 @@ export default function Create() {
                                     className="form-control"
                                     value={role_name}
                                     onChange={capturarNombre}
+                                    id="role_name"
                                     placeholder="Ej: Administrador"
                                     style={{
                                         border: "1px solid #c7a27b",
-                                        backgroundColor: "#fff9f4"
+                                        backgroundColor: "#1b1a19ff"
                                     }}
                                 />
                             </div>
 
-                            {/* BOTÓN MARRÓN */}
                             <div className="d-grid">
                                 <button 
                                     type="button"

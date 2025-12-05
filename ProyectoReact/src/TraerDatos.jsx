@@ -36,8 +36,8 @@ export default function TraerDatos() {
                     <div 
                         className="card shadow"
                         style={{
-                            backgroundColor: "#f6eee3",
-                            border: "1px solid #c7a27b",
+                            backgroundColor: "#f6eee3",   
+                            border: "1px solid #c7a27b",   
                             borderRadius: "12px"
                         }}
                     >
@@ -67,14 +67,14 @@ export default function TraerDatos() {
                                 <tbody>
                                     {datos.map(item => (
                                         <tr key={item.id}>
-                                            <td>{item.role_name}</td>
+                                            <td style={{ color: "black" }}>{item.role_name}</td>
 
                                             <td className="text-center" >
                                                 <button 
                                                     className="btn btn-sm"
                                                     onClick={() => eliminar_api(item.id)}
                                                     style={{
-                                                        backgroundColor: "#8b5e3c",
+                                                        backgroundColor: "#000000ff",
                                                         color: "white",
                                                         fontWeight: "bold",
                                                         borderRadius: "6px",
